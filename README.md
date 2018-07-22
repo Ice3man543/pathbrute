@@ -52,7 +52,7 @@ Options:
 ```
 ***
  
-#Docker
+# Building With Docker
 ```
 - Building from Dockerfile
 docker build -t example-scratch -f Dockerfile
@@ -65,9 +65,9 @@ docker run -it 589606bdc12a /pathBrute_linux -u http://testphp.vulnweb.com/ -s d
 ```
 ***
     
-#Compilation  
+# Manual Build 
 ```
-#Manual Compilation  `
+git clone https://github.com/milo2012/pathbrute.git
 go get github.com/mkideal/cli
 go get github.com/badoux/goscraper
 go get github.com/fatih/color
@@ -76,7 +76,7 @@ go build pathBrute.go
 ```
 ***
   
-#Example 
+# Example 
 ```
 ./pathBrute -s default -f urls.txt -v -i -n 25 
 [*] Getting Default Page Title for Invalid URI Paths
@@ -101,7 +101,7 @@ http://xxxx.com/ADS-EJB [200] [482] []
 ```
 ***
   
-#Explanation of the output from pathBrute  
+# Explanation of the output from pathBrute  
 ```
 https://208.88.199.241/sap/bc/webdynpro/sap/wdr_test_gantt [401] [458] [File or directory not found] [27736 of 38988]
 ```
